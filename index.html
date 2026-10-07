@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trung Kien Le | Telecom Research Engineer & Portfolio</title>
+  <meta name="description" content="Personal portfolio of Le Trung Kien (ltkdt) - Undergraduate in Electronics and Telecommunications Engineering at Hanoi University of Science and Technology (HUST). Research in ISAC, Edge AI, and Telecom.">
+  <meta name="author" content="Le Trung Kien (ltkdt)">
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <!-- Left Tabs -->
+      <nav class="nav-tabs" aria-label="Main navigation">
+        <button class="nav-tab active" data-tab="home" id="tab-btn-home">
+          <span>Home</span>
+          <span class="active-indicator"></span>
+        </button>
+        <button class="nav-tab" data-tab="resume" id="tab-btn-resume">
+          <span>Resume</span>
+          <span class="active-indicator"></span>
+        </button>
+        <button class="nav-tab" data-tab="gallery" id="tab-btn-gallery">
+          <span>Gallery</span>
+          <span class="active-indicator"></span>
+        </button>
+        <button class="nav-tab" data-tab="awards" id="tab-btn-awards">
+          <span>Awards</span>
+          <span class="active-indicator"></span>
+        </button>
+      </nav>
+
+      <!-- Center Title -->
+      <div class="site-branding">
+        <a href="#home" class="brand-link" data-tab-nav="home">Trung Kien Le's Portfolio</a>
+      </div>
+
+      <!-- Right Actions (Socials & Theme Toggle) -->
+      <div class="header-actions">
+        <a href="https://www.linkedin.com/in/trung-kien-le-ltkdt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/ltkdt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@ltkdt" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="YouTube" aria-label="YouTube Channel">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/>
+          </svg>
+        </a>
+        <a href="mailto:kienlt2306@gmail.com" class="social-icon-btn" title="Email: kienlt2306@gmail.com" aria-label="Send Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </a>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode" title="Toggle Light/Dark Mode">
+          <span class="icon-sun">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </span>
+          <span class="icon-moon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Bar (Sticky bottom or top sub-nav for swift mobile access) -->
+  <nav class="mobile-tabs" aria-label="Mobile Navigation">
+    <button class="mobile-tab active" data-tab="home">Home</button>
+    <button class="mobile-tab" data-tab="resume">Resume</button>
+    <button class="mobile-tab" data-tab="gallery">Gallery</button>
+    <button class="mobile-tab" data-tab="awards">Awards</button>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    
+    <!-- ==============================================
+         TAB 1: HOME (Current site, matching outline)
+         ============================================== -->
+    <section id="tab-home" class="tab-pane active" aria-labelledby="tab-btn-home">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Logo / Portrait Card -->
+        <div class="hero-media-col">
+          <div class="hero-card">
+            <img src="img/logo.png" alt="Le Trung Kien - ltkdt avatar logo" class="hero-img">
+            <div class="hero-card-badge">
+              <span class="status-dot"></span>
+              <span>HUST &bull; SPARC Lab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Headline, Bio & Action Buttons -->
+        <div class="hero-text-col">
+          <div class="hero-text-inner">
+            <h1 class="hero-headline">
+              I’m Le Trung Kien,<br>
+              <span class="hero-subheading">an undergraduate who aims to be a Telecommunication Research & Development Engineer.</span>
+            </h1>
+
+            <p class="hero-bio">
+              I am an undergraduate from Hanoi University of Science and Technology (HUST, Vietnam). 
+              My field of research include ISAC - Integrated Communication and Sensing, Telecommunication, and Edge AI. 
+              My goal is not only to publish high-quality papers, but to translate my research into real-world applications that create tangible value.
+            </p>
+
+            <!-- Stacked / Pill Action Buttons matching the outline image -->
+            <div class="hero-action-buttons">
+              <a href="https://www.linkedin.com/in/trung-kien-le-ltkdt" target="_blank" rel="noopener noreferrer" class="pill-action-btn">
+                <span>LINKEDIN</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </a>
+
+              <button class="pill-action-btn" data-tab-nav="gallery">
+                <span>GALLERY / PROJECTS</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21 15 16 10 5 21"/>
+                </svg>
+              </button>
+
+              <button class="pill-action-btn" data-tab-nav="resume">
+                <span>RESUME</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Links list from README.md -->
+            <div class="readme-links-group">
+              <span class="links-label">Connect & Links:</span>
+              <div class="links-chips">
+                <a href="https://github.com/ltkdt" target="_blank" rel="noopener noreferrer" class="link-chip">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/trung-kien-le-ltkdt" target="_blank" rel="noopener noreferrer" class="link-chip">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.youtube.com/@ltkdt" target="_blank" rel="noopener noreferrer" class="link-chip">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z"/></svg>
+                  <span>YouTube</span>
+                </a>
+                <a href="mailto:kienlt2306@gmail.com" class="link-chip">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>kienlt2306@gmail.com</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         TAB 2: RESUME (Extracted from cv.tex, no address/phone)
+         ============================================== -->
+    <section id="tab-resume" class="tab-pane" aria-labelledby="tab-btn-resume">
+      <div class="container resume-container">
+        
+        <!-- Resume Header Card -->
+        <div class="resume-header-card">
+          <div class="resume-header-info">
+            <h1 class="resume-name">Trung Kien Le</h1>
+            <p class="resume-subtitle">Electronics and Telecommunications Engineering &bull; Hanoi University of Science and Technology (HUST)</p>
+            <div class="resume-contact-bar">
+              <span class="resume-contact-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:kienlt2306@gmail.com">kienlt2306@gmail.com</a>
+              </span>
+              <span class="resume-contact-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <a href="https://github.com/ltkdt" target="_blank" rel="noopener noreferrer">github.com/ltkdt</a>
+              </span>
+              <span class="resume-contact-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <a href="https://www.linkedin.com/in/trung-kien-le-ltkdt" target="_blank" rel="noopener noreferrer">linkedin.com/in/trung-kien-le-ltkdt</a>
+              </span>
+            </div>
+          </div>
+          <div class="resume-header-actions">
+            <button class="resume-print-btn" onclick="window.print()">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+              <span>Print / Save PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Section: Education -->
+        <div class="resume-block">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Education</h2>
+            <div class="title-rule"></div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="entry-title">Hanoi University of Science and Technology (HUST)</h3>
+                <p class="entry-subtitle">Electronics and Telecommunications Engineering Undergraduate</p>
+              </div>
+              <span class="entry-date badge">2024 &ndash; Present</span>
+            </div>
+            <div class="entry-details">
+              <p class="gpa-text"><strong>Cumulative GPA:</strong> <span class="gpa-val">3.54 / 4.00</span></p>
+              <p class="coursework-text"><strong>Relevant Coursework:</strong> Microprocessor Engineering, Digital Electronics, Applied Software Engineering.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="entry-title">Foreign Language Specialized School, Vietnam National University</h3>
+                <p class="entry-subtitle">High School Diploma</p>
+              </div>
+              <span class="entry-date badge">2021 &ndash; 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Experience & Research -->
+        <div class="resume-block">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Experience & Research</h2>
+            <div class="title-rule"></div>
+          </div>
+
+          <!-- SPARC Lab -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="entry-title">Signal Processing and Radio Communication Lab (SPARC Lab, SEEE)</h3>
+                <p class="entry-subtitle">Researcher & Member</p>
+              </div>
+              <span class="entry-date badge">2025 &ndash; Present</span>
+            </div>
+            <ul class="bullet-list">
+              <li>
+                <strong>Fetal ECG Extraction and Monitoring System:</strong> 
+                Developed an AI framework for non-invasive fetal ECG extraction and fetal health monitoring. 
+                Paper accepted at the <em>IEEE International Conference on Communications and Electronics (ICCE 2026)</em>. 
+                Awarded <span class="highlight-inline">3rd Place</span> in the 43rd HUST Student Research Conference by School of Electrical and Electronic Engineering.
+              </li>
+              <li>
+                <strong>SAR-Based Land Subsidence Monitoring System:</strong> 
+                Developed a full-stack web application and data processing pipeline for monitoring land subsidence using Synthetic Aperture Radar (SAR) earth observation data from NASA. 
+                Won <span class="highlight-inline">1st Place (Giải Nhất)</span> and <span class="highlight-inline">Best Use of Data</span> in Ninh Binh local round of NASA Space Apps Challenge 2025.
+              </li>
+              <li>
+                <strong>FPGA-Based EtherCAT Motion Control System:</strong> 
+                Designed and implemented an FPGA-based EtherCAT Master for high-precision motion control, as part of a team project selected for the final round of the MCU-FPGA Hanoi Contest 2026.
+              </li>
+            </ul>
+          </div>
+
+          <!-- SEEE Researcher Club -->
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3 class="entry-title">SEEE Researcher Club</h3>
+                <p class="entry-subtitle">Member</p>
+              </div>
+              <span class="entry-date badge">2024 &ndash; Present</span>
+            </div>
+            <ul class="bullet-list">
+              <li>
+                <strong>Academic Event Organization:</strong> Organized key academic events for the School of Electrical and Electronic Engineering, including the Best Project - Micromouse competition, PCB design training courses, and technical workshops.
+              </li>
+              <li>
+                <strong>STEM and IoT Projects:</strong> Contributed to the club's STEM initiatives by designing and developing a smart IoT home system model and an ESP32-controlled robotic vehicle.
+              </li>
+              <li>
+                <strong>Custom PCB Development:</strong> Designed schematics and fabricated custom printed circuit boards (PCBs) for various club robotics and electronics projects.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section: Certifications & Training -->
+        <div class="resume-block">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="title-rule"></div>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div class="cert-content">
+                <h4>Microcontroller Unit (MCU) Programming Training</h4>
+                <p class="cert-issuer">Willas Electronic Vietnam &bull; SONiX Technology (2026)</p>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div class="cert-content">
+                <h4>Embedded Systems Bare-Metal Programming (STM32)</h4>
+                <p class="cert-issuer">Udemy</p>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div class="cert-content">
+                <h4>Advanced C++ Programming</h4>
+                <p class="cert-issuer">Programming Hub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Skills & Interests -->
+        <div class="resume-block">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Skills & Interests</h2>
+            <div class="title-rule"></div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Programming & Architecture</h4>
+              <p>C, C++ for embedded applications, Python for scientific computing and AI research. Modern web architecture, SQL & NoSQL databases.</p>
+            </div>
+            <div class="skill-category">
+              <h4>Hardware & Practical Skills</h4>
+              <p>Designing schematics, Printed Circuit Board (PCB) design, Soldering & prototyping, Microcontrollers (STM32, ESP32, SONiX), FPGA.</p>
+            </div>
+            <div class="skill-category">
+              <h4>Languages</h4>
+              <p>English (IELTS score 7.0), Vietnamese (Native).</p>
+            </div>
+            <div class="skill-category">
+              <h4>Research Interests</h4>
+              <p>AI for Communications Systems, Integrated Sensing and Communication (ISAC), Edge AI, Telecommunications, Computer Architecture.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         TAB 3: GALLERY (img/gallery_showcase)
+         Grid layout matching the outline image
+         ============================================== -->
+    <section id="tab-gallery" class="tab-pane" aria-labelledby="tab-btn-gallery">
+      <div class="container showcase-container">
+        
+        <!-- Showcase Header -->
+        <div class="showcase-header">
+          <div class="showcase-header-text">
+            <h1 class="showcase-title">Gallery Showcase</h1>
+            <p class="showcase-desc">Photographs from academic conferences, national hackathons, and research lab milestones.</p>
+          </div>
+          <!-- Filter Tags -->
+          <div class="showcase-filters">
+            <span class="filter-pill active">All Moments</span>
+            <span class="filter-pill">Conferences</span>
+            <span class="filter-pill">Hackathons</span>
+            <span class="filter-pill">Innovation</span>
+          </div>
+        </div>
+
+        <!-- Editorial Dynamic Photo Grid (Single column on mobile) -->
+        <div class="photo-grid gallery-grid">
+          
+          <!-- Image 1: IEEE ICCE 2026 -->
+          <div class="photo-card featured" data-src="img/gallery_showcase/IMG_6196.JPG" data-caption="IEEE ICCE 2026 Presentation" data-desc="Signal Processing and Radio Communication Lab (SPARC Lab) team presenting research at the 11th International Conference on Communications and Electronics.">
+            <div class="photo-img-wrap">
+              <img src="img/gallery_showcase/IMG_6196.JPG" alt="IEEE ICCE 2026 International Conference Presentation" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge">Conference</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">IEEE ICCE 2026</h3>
+                  <p class="overlay-sub">11th International Conference on Communications and Electronics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 2: Vietnam Innovation Day 2026 Stage -->
+          <div class="photo-card" data-src="img/gallery_showcase/IMG_20261004_124854.jpg" data-caption="Vietnam Innovation Day 2026 & Science Award" data-desc="Receiving 2nd Prize for BioPulse Insight at the National Science Innovation Contest (Sáng kiến Khoa học 2026) organized by VnExpress & SATI.">
+            <div class="photo-img-wrap">
+              <img src="img/gallery_showcase/IMG_20261004_124854.jpg" alt="Vietnam National Innovation Day 2026 Stage Award" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge">Award Stage</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">National Innovation Day 2026</h3>
+                  <p class="overlay-sub">2nd Prize Award Ceremony &bull; BioPulse Insight</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 3: NASA Space Apps Ninh Binh 2025 -->
+          <div class="photo-card" data-src="img/gallery_showcase/559549629.jpg" data-caption="NASA Space Apps Challenge Ninh Binh 2025" data-desc="Team Brave New World - Through the Radar Looking Glass: Revealing Earth Processes with SAR (1st Place & Best Use of Data).">
+            <div class="photo-img-wrap">
+              <img src="img/gallery_showcase/559549629.jpg" alt="NASA Space Apps Challenge 2025 - Team Brave New World" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge">Hackathon</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">NASA Space Apps 2025</h3>
+                  <p class="overlay-sub">Team Brave New World &bull; SAR Earth Observation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==============================================
+         TAB 4: AWARDS (awards folder / img/awards)
+         Grid layout matching the outline image
+         ============================================== -->
+    <section id="tab-awards" class="tab-pane" aria-labelledby="tab-btn-awards">
+      <div class="container showcase-container">
+        
+        <!-- Awards Header -->
+        <div class="showcase-header">
+          <div class="showcase-header-text">
+            <h1 class="showcase-title">Honors & Awards</h1>
+            <p class="showcase-desc">Official certificates and honors recognizing research achievements, competition triumphs, and technical certifications.</p>
+          </div>
+          <div class="showcase-filters">
+            <span class="filter-pill active">All Awards</span>
+            <span class="filter-pill">1st Place</span>
+            <span class="filter-pill">Research</span>
+            <span class="filter-pill">Certificates</span>
+          </div>
+        </div>
+
+        <!-- Awards Grid (collapses to single column on mobile) -->
+        <div class="photo-grid awards-grid">
+
+          <!-- Award 1: NASA Space Apps 1st Place -->
+          <div class="photo-card" data-src="awards/1763343009512.jpeg" data-caption="1st Place (Giải Nhất) - NASA Space Apps Challenge 2025" data-desc="Presented to Team Brave New World for outstanding participation and engineering efforts addressing challenges on Earth and space.">
+            <div class="photo-img-wrap">
+              <img src="awards/1763343009512.jpeg" alt="NASA Space Apps Challenge Ninh Binh 2025 - 1st Place Certificate" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge gold">1st Place</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">NASA Space Apps 2025: 1st Place</h3>
+                  <p class="overlay-sub">Ninh Binh Local Round &bull; Team Brave New World</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Award 2: NASA Space Apps Best Use of Data -->
+          <div class="photo-card" data-src="awards/1763343204649.jpeg" data-caption="Best Use of Data (Sử dụng dữ liệu tốt nhất) - NASA Space Apps 2025" data-desc="Awarded for state-of-the-art Synthetic Aperture Radar (SAR) data pipeline and satellite land subsidence tracking.">
+            <div class="photo-img-wrap">
+              <img src="awards/1763343204649.jpeg" alt="NASA Space Apps Challenge Ninh Binh 2025 - Best Use of Data Certificate" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge">Best Use of Data</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">Best Use of Data</h3>
+                  <p class="overlay-sub">NASA Space Apps Challenge Ninh Binh 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Award 3: Vietnam Science Innovation Contest 2026 - 2nd Prize -->
+          <div class="photo-card" data-src="awards/1791100968278.jpg" data-caption="2nd Prize (Giải Nhì) - Cuộc thi Sáng kiến Khoa học 2026" data-desc="National award for BioPulse Insight project developed by BKIC and SPARC Lab, organized by VnExpress & SATI.">
+            <div class="photo-img-wrap">
+              <img src="awards/1791100968278.jpg" alt="Cuộc thi Sáng kiến Khoa học 2026 - Giải Nhì - BioPulse Insight" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge silver">2nd Prize</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">Science Innovation Contest 2026</h3>
+                  <p class="overlay-sub">BioPulse Insight &bull; BKIC & SPARC Lab</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Award 4: 43rd HUST Student Research Conference Certificate -->
+          <div class="photo-card" data-src="awards/1779591354655.jpeg" data-caption="The 43rd HUST Student Research Conference Certificate" data-desc="Research: 'A Peak-Aware Envelope-Guided Loss for Fetal ECG Detection and R-Peak Localization'. Awarded 3rd Place by School of Electrical and Electronic Engineering.">
+            <div class="photo-img-wrap">
+              <img src="awards/1779591354655.jpeg" alt="The 43rd Student Research Conference HUST - Certificate" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge bronze">3rd Place & Research</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">43rd HUST Student Research Conf</h3>
+                  <p class="overlay-sub">Fetal ECG Detection & R-Peak Localization</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Award 5: MCU Programming Training Certification -->
+          <div class="photo-card" data-src="awards/1779961302942.jpeg" data-caption="MCU Programming Training Certification" data-desc="Completed 'MCU SONiX Usage Guide' technical course organized by Willas Electronic Vietnam Co. and SONiX Technology Co.">
+            <div class="photo-img-wrap">
+              <img src="awards/1779961302942.jpeg" alt="Microcontroller Unit (MCU) Programming Certification" loading="lazy">
+              <div class="photo-overlay">
+                <div class="overlay-badge">Certification</div>
+                <div class="overlay-info">
+                  <h3 class="overlay-title">MCU Programming Certification</h3>
+                  <p class="overlay-sub">Willas Electronic Vietnam & SONiX Tech</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close image preview">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="lightbox-body">
+        <img id="lightbox-img" src="" alt="Enlarged photo preview">
+        <div class="lightbox-caption">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">&copy; 2026 Trung Kien Le (ltkdt). Built for GitHub Pages.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ltkdt" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/trung-kien-le-ltkdt" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.youtube.com/@ltkdt" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="mailto:kienlt2306@gmail.com">kienlt2306@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
